@@ -1,0 +1,668 @@
+html {
+	background-color: #2c7ec1;
+	font-family: 'Raleway', Arial;
+	font-weight: 400;
+	font-size: 16px;
+	color: #333333;
+}
+
+a.navbar-brand {
+	float: none;
+	margin-left: 0 !important;
+}
+
+.navbar-nav {
+	display: inline-flex;
+	flex-direction: row;
+	float: none;
+}
+
+.navbar-nav li {
+	padding: 10px 15px;
+}
+
+nav.navbar::after {
+	content: '';
+	background: url('../img/bg-2.png')
+}
+
+img.waves {
+	position: absolute;
+	z-index: 3;
+	width: 80vw;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
+nav.navbar .logo {
+	max-width: 7.025em;
+}
+
+nav .row {
+	width: 100%;
+}
+
+section#compre .row {
+	padding-top: 10vh;
+}
+
+body {
+	background-color: #001e24;
+}
+
+nav.navbar {
+	background-color: transparent;
+	position: relative;
+	width: 100%;
+	z-index: 5;
+}
+
+nav.navbar .logo {
+	max-width: 10.25em;
+	margin-top: 30px !important;
+}
+
+nav .navbar-toggler {
+	border: none;
+}
+
+nav.navbar .nav-link {
+	color: #fff !important;
+	font-weight: 500;
+	font-size: 1em;
+}
+
+section#quadrados {
+	margin-bottom: 40px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+div.grid {
+	/* Grid Fallback */
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	width: 43.8vw;
+	padding: 1em 0;
+	/* Supports Grid */
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(17em, 1fr));
+	grid-auto-rows: minmax(17em, auto);
+	grid-gap: 0em;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+section#quadrados .module {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 17.5em;
+	margin-left: 5px;
+	margin-right: 5px;
+	flex: 1 1 200px;
+}
+
+section#quadrados .module-odd.one {
+	background-color: black !important;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+section#quadrados .module-even.two {
+	background-color: #001e24 !important;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+section#quadrados h3 {
+	position: absolute;
+	z-index: 1;
+	color: #fff;
+	text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.63);
+}
+
+section#quadrados h3:hover {
+	cursor: pointer;
+}
+
+section#quadrados .module-odd.one img.rhoncus {
+	width: 22vw;
+}
+
+section#quadrados .module-odd.one img.mattis {
+	margin-left: 30px;
+	width: 22vw;
+}
+
+section#quadrados .module-even.two img.Phasellus {
+	margin-right: 100px;
+	width: 30vw;
+}
+
+section#quadrados .module-even.two img.turpis {
+	width: 36vw;
+	margin-left: -95px;
+}
+
+section#quadrados .module-odd.one img.imperdiet {
+	margin-left: 30px;
+	width: 22vw;
+}
+
+section#quadrados .module-even.two img.tincidunt {
+	width: 22vw;
+	margin-right: 10px;
+}
+
+section#quadrados .module-odd.one img.condimentum {
+	margin-top: 190px;
+	width: 18vw;
+}
+
+section#quadrados .module-even.two img.lacinia {
+	width: 33vw;
+	margin-left: -90px;
+}
+
+section#quadrados .module-odd.one img.faucibus {
+	width: 24vw;
+	margin-bottom: 20px;
+	margin-left: -30px;
+}
+
+section#quadrados .module-even.two .image,
+section#quadrados .module-odd.one .image {
+	-webkit-transition: transform .5s ease;
+	-webkit-filter: blur(2px);
+	-moz-transition: transform .5s ease;
+	-o-transition: transform .5s ease;
+	-ms-transition: transform .5s ease;
+	transition: transform .5s ease;
+	filter: blur(2px);
+}
+
+section#quadrados .module-even.two .image:hover,
+section#quadrados .module-odd.one .image:hover {
+	transform: scale(1.08, 1.08)!important;
+	-webkit-filter: blur(0px);
+	filter: blur(0px);
+	cursor: pointer;
+}
+
+section#quadrados .module-odd {
+	background-color: black !important;
+}
+
+section#quadrados .module-even {
+	background-color: #001e24 !important;
+}
+
+/* If Grid is supported, remove the margin we set for the fallback */
+
+@supports (display: grid) {
+	section#quadrados .module {
+		margin: 0;
+	}
+}
+
+.modal {
+	text-align: center;
+	padding: 0!important;
+}
+
+.modal .modal-title {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.modal:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -4px;
+}
+
+.modal-header .close {
+	margin: -1rem;
+}
+
+.close {
+	font-size: 28px;
+	padding-top: 0.4rem;
+	display: block;
+	float: right;
+	color: #216f38 !important;
+	opacity: 1;
+}
+
+.modal-dialog {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.modal .product_content p {
+	text-align: left;
+	font-size: 1em;
+}
+
+/* GRID 1 */
+
+div.modal .modal-header .modal-title {}
+
+section#desconto3 {
+	text-align: left;
+	margin: 70px 0;
+	margin-bottom: 0px !important;
+	padding-bottom: 0px !important;
+	padding: 50px 0;
+	position: relative;
+}
+
+section#desconto3 .detalhes {
+	float: none;
+	padding: 0 30px;
+}
+
+section#desconto3 h3 {
+	font-weight: 400;
+	font-size: 27px;
+	color: #216F38;
+	margin-bottom: 20px;
+	display: block;
+	font-family: 'Raleway', Arial;
+}
+
+section#desconto3 span {
+	font-weight: 300;
+	margin: 30px 0;
+	font-size: 1.125em;
+	color: #fff;
+	display: block;
+	font-family: 'Raleway', Arial;
+}
+
+footer {
+	text-align: center;
+	background-repeat: no-repeat;
+	background-color: #aad6ce;
+	padding: 20px 0;
+	position: relative;
+	color: #fff
+}
+
+.skew-c {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	left: 0px;
+	top: 1px;
+	background: linear-gradient(to left bottom, #001e24 49%, #aad6ce 50%);
+}
+
+footer .imagem {
+	float: right;
+	top: 40px;
+}
+
+footer .detalhes {
+	float: right;
+}
+
+footer h3 {
+	font-weight: 400;
+	font-size: 27px;
+	color: #000;
+	margin-bottom: 20px;
+	display: block;
+	font-family: 'Raleway', Arial;
+	font-style: italic;
+}
+
+footer span {
+	font-weight: 300;
+	font-size: 1em;
+	color: #000;
+	display: block;
+	font-family: 'Raleway', Arial;
+}
+
+footer img {
+	margin-top: 30px;
+	max-width: 150px;
+	float: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 10% !important
+}
+
+footer .detalhes strong {
+	font-weight: 600;
+}
+
+footer .detalhes strong a {
+	text-decoration: none;
+	color: #000;
+}
+
+footer .detalhes strong a:hover {
+	color: #1d2a4c;
+}
+
+footer span.numeros {
+	margin: 0;
+}
+
+footer span.font-responsivo {
+	font-size: 0.75em;
+	margin-top: 0;
+}
+
+section#desconto3 {
+	margin: 0 !important;
+}
+
+@media (max-width: 1367px) {
+	img.waves {
+		width: 65vw;
+	}
+	img.marketing {
+		width: 35vw;
+	}
+	div.grid {
+		width: 60vw;
+		grid-template-columns: repeat(auto-fill, minmax(13em, 1fr));
+		grid-auto-rows: minmax(16em, auto);
+	}
+	.module {
+		height: 16.5em;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	section#quadrados .module-odd.one img.rhoncus {
+		width: 34vw;
+	}
+	section#quadrados .module-odd.one img.mattis {
+		margin-left: 0px;
+		width: 34vw;
+	}
+	section#quadrados .module-even.two img.Phasellus {
+		width: 34vw;
+	}
+	section#quadrados .module-odd.one img.imperdiet {
+		margin-left: 0px;
+		width: 34vw;
+	}
+	section#quadrados .module-even.two img.tincidunt {
+		width: 34vw;
+	}
+	section#quadrados .module-odd.one img.condimentum {
+		margin-top: 0;
+		width: 34vw;
+	}
+	section#quadrados .module-even.two img.lacinia {
+		width: 34vw;
+	}
+	section#quadrados .module-odd.one img.faucibus {
+		width: 24vw;
+		margin-bottom: -20px;
+	}
+}
+
+@media (max-width: 1025px) {
+	img.waves {
+		width: 65vw;
+	}
+	img.marketing {
+		width: 35vw;
+	}
+	div.grid {
+		width: 77.8vw;
+		grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+		grid-auto-rows: minmax(13em, auto);
+	}
+	section#quadrados .module-odd.one img.rhoncus {
+		width: 43vw;
+	}
+	section#quadrados .module-odd.one img.mattis {
+		width: 42vw;
+	}
+	section#quadrados .module-even.two img.Phasellus {
+		width: 43vw;
+		margin-right: 20px;
+	}
+	section#quadrados .module-even.two img.turpis {
+		width: 43vw;
+	}
+	section#quadrados .module-odd.one img.imperdiet {
+		width: 42vw;
+	}
+	section#quadrados .module-even.two img.tincidunt {
+		width: 42vw;
+		margin-right: -10px;
+	}
+	section#quadrados .module-odd.one img.condimentum {
+		width: 43vw;
+		margin-left: 0px;
+	}
+	section#quadrados .module-even.two img.lacinia {
+		width: 42vw;
+	}
+	section#quadrados .module-odd.one img.faucibus {
+		width: 38vw;
+		margin-top: 40px;
+		margin-left: -70px;
+	}
+}
+
+@media (max-width: 769px) {
+	.modal:before {
+		margin-right: -15px;
+	}
+	div.grid {
+		width: 83vw;
+		grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
+		grid-auto-rows: minmax(10em, auto);
+	}
+	.module {
+		height: 12.8em;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.modal:before {
+		min-height: 40%;
+		height: 80vh;
+		max-height: 100%;
+	}
+	.product_view .modal-dialog {
+		width: 85% !important;
+	}
+	section#quadrados .module-odd.one img.rhoncus {
+		width: 58vw;
+	}
+	section#quadrados .module-odd.one img.mattis {
+		width: 55vw;
+		margin-left: -80px;
+	}
+	section#quadrados .module-even.two img.Phasellus {
+		width: 53vw;
+		margin-right: 0;
+		margin-left: -45px;
+	}
+	section#quadrados .module-even.two img.turpis {
+		width: 56vw;
+	}
+	section#quadrados .module-odd.one img.imperdiet {
+		width: 56vw;
+		margin-left: -60px;
+	}
+	section#quadrados .module-even.two img.tincidunt {
+		width: 57vw;
+		margin-right: 0;
+		margin-left: -180px;
+	}
+	section#quadrados .module-odd.one img.condimentum {
+		width: 57vw;
+	}
+	section#quadrados .module-even.two img.lacinia {
+		width: 55vw;
+		margin-left: -80px;
+	}
+	section#quadrados .module-odd.one img.faucibus {
+		width: 48vw;
+		margin-top: 120px;
+		margin-right: 0;
+	}
+	section#quadrados h3 {
+		font-size: 22px;
+	}
+	section#desconto3 span {
+		font-size: 1em;
+	}
+}
+
+@media (max-width: 426px) {
+	div.grid {
+		width: 90vw;
+		grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+		grid-auto-rows: minmax(10em, auto);
+	}
+	.module {
+		height: 12.8em;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	section#quadrados .module-odd.one img.rhoncus {
+		width: 99vw;
+		margin-left: 0;
+	}
+	section#quadrados .module-odd.one img.mattis {
+		width: 99vw;
+		margin-left: 0;
+	}
+	section#quadrados .module-even.two img.Phasellus {
+		width: 99vw;
+		margin-right: 0px;
+		margin-left: 0;
+	}
+	section#quadrados .module-even.two img.turpis {
+		width: 113vw;
+	}
+	section#quadrados .module-odd.one img.imperdiet {
+		width: 99vw;
+		margin-left: 0;
+	}
+	section#quadrados .module-even.two img.tincidunt {
+		width: 99vw;
+		margin-right: 0;
+		margin-left: -30px;
+	}
+	section#quadrados .module-odd.one img.condimentum {
+		width: 99vw;
+	}
+	section#quadrados .module-even.two img.lacinia {
+		width: 99vw;
+		margin-left: 0;
+	}
+	section#quadrados .module-odd.one img.faucibus {
+		width: 91vw;
+		margin-top: 40px;
+		margin-left: 0;
+	}
+	footer br {
+		display: none !important;
+	}
+	footer span.numeros {
+		margin: 0;
+	}
+	footer span.font-responsivo {
+		font-size: 0.75em;
+		margin-top: 0;
+	}
+}
+
+@media (min-width: 319px) and (max-width: 424px) {
+	section#quadrados .module {
+		height: 13.5em;
+	}
+	nav.navbar .nav-link {
+		font-size: 0.9em;
+	}
+}
+
+@media (max-width: 376px) {
+	div.grid {
+		width: 80vw;
+	}
+	section#quadrados .module {
+		height: 14.5em;
+	}
+}
+
+@media (max-width: 325px) {
+	section#quadrados .module {
+		height: 12.5em;
+	}
+	.modal:before {
+		min-height: 40%;
+		height: 35vh;
+		max-height: 100%;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 769px) {
+	nav.navbar {
+		background-color: transparent;
+		padding-top: 30px;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 426px) {
+	img.waves {
+		display: none;
+	}
+	.navbar-nav {
+		float: none;
+		left: -10px;
+		position: relative;
+	}
+	img.marketing {
+		margin: 30px 0;
+	}
+	nav.navbar a {
+		float: NONE;
+	}
+	section#compre .row {
+		margin-top: 5vh;
+	}
+	nav.navbar .logo {
+		width: auto;
+		min-width: 40vw;
+		max-width: 50vw;
+	}
+	section#link h3 {
+		font-size: 1.28em !important;
+		line-height: 28px;
+	}
+	section#desconto3 span {
+		font-size: 0.875em;
+	}
+	footer img {
+		width: auto !important;
+		min-width: 10vw;
+		max-width: 20vw;
+	}
+}
+
+@media (max-width: 769px) {
+	img.waves {
+		width: 80vw;
+	}
+}
